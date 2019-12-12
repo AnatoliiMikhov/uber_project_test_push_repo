@@ -2,6 +2,28 @@
   font-family: "Roboto", sans-serif;
 }
 
+.label {
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 6px 10px 6px 12px;
+}
+
+.title {
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 0;
+}
+
 header {
   position: relative;
 }
@@ -167,29 +189,7 @@ nav {
   padding: 71px 0 65px 0;
 }
 
-.label {
-  width: 112px;
-  height: 24px;
-  background-color: #000000;
-  margin: 0 auto;
-  color: #ffffff;
-  font-size: 11px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 6px 10px 6px 12px;
-}
-
-.title {
-  color: #222222;
-  font-size: 38px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 38px;
-  margin-bottom: 0;
-}
-
-.advantages_item {
+.advantages .advantages_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,7 +201,7 @@ nav {
   margin-top: 35px;
 }
 
-.advantages_round {
+.advantages .advantages_item .advantages_round {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,16 +217,16 @@ nav {
   border-radius: 50%;
 }
 
-.advantages_descr {
+.advantages .advantages_item .advantages_descr {
   max-width: 341px;
 }
 
-.advantages_descr:last-child {
+.advantages .advantages_item .advantages_descr:last-child {
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
-.advantages_descr h3 {
+.advantages .advantages_item .advantages_descr h3 {
   line-height: 21px;
   color: #1eacc7;
   font-size: 17px;
@@ -234,7 +234,7 @@ nav {
   margin-bottom: 0;
 }
 
-.advantages_descr p {
+.advantages .advantages_item .advantages_descr p {
   color: #202020;
   font-size: 15px;
   font-weight: 300;

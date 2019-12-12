@@ -1,6 +1,26 @@
 *
 	font-family: "Roboto", sans-serif
 
+.label
+	width: 112px
+	height: 24px
+	background-color: #000000
+	margin: 0 auto
+	color: #ffffff
+	font-size: 11px
+	font-weight: 400
+	text-transform: uppercase
+	padding: 6px 10px 6px 12px
+
+.title
+	color: #222222
+	font-size: 38px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	margin-top: 38px
+	margin-bottom: 0
+
 header
 	position: relative
 
@@ -146,72 +166,53 @@ nav
 	min-height: 900px
 	padding: 71px 0 65px 0
 
-.label
-	width: 112px
-	height: 24px
-	background-color: #000000
-	margin: 0 auto
-	color: #ffffff
-	font-size: 11px
-	font-weight: 400
-	text-transform: uppercase
-	padding: 6px 10px 6px 12px
+	.advantages_item
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-ms-flex-pack: distribute
+		justify-content: space-around
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		margin-top: 35px
 
-.title
-	color: #222222
-	font-size: 38px
-	font-weight: 700
-	text-transform: uppercase
-	text-align: center
-	margin-top: 38px
-	margin-bottom: 0
+		.advantages_round
+			display: -webkit-box
+			display: -ms-flexbox
+			display: flex
+			-webkit-box-pack: center
+			-ms-flex-pack: center
+			justify-content: center
+			-webkit-box-align: center
+			-ms-flex-align: center
+			align-items: center
+			width: 113px
+			height: 113px
+			background-color: #1eacc7
+			border-radius: 50%
 
-.advantages_item
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	-ms-flex-pack: distribute
-	justify-content: space-around
-	-webkit-box-align: center
-	-ms-flex-align: center
-	align-items: center
-	margin-top: 35px
+		.advantages_descr
+			max-width: 341px
 
-.advantages_round
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	-webkit-box-pack: center
-	-ms-flex-pack: center
-	justify-content: center
-	-webkit-box-align: center
-	-ms-flex-align: center
-	align-items: center
-	width: 113px
-	height: 113px
-	background-color: #1eacc7
-	border-radius: 50%
+			&:last-child
+				-ms-flex-item-align: start
+				align-self: flex-start
 
-.advantages_descr
-	max-width: 341px
+			h3
+				line-height: 21px
+				color: #1eacc7
+				font-size: 17px
+				font-weight: 400
+				margin-bottom: 0
 
-	&:last-child
-		-ms-flex-item-align: start
-		align-self: flex-start
+			p
+				color: #202020
+				font-size: 15px
+				font-weight: 300
+				line-height: 21px
+				margin: 0
 
-	h3
-		line-height: 21px
-		color: #1eacc7
-		font-size: 17px
-		font-weight: 400
-		margin-bottom: 0
-
-	p
-		color: #202020
-		font-size: 15px
-		font-weight: 300
-		line-height: 21px
-		margin: 0
 // mobile section start
 .mobile
 	min-height: 900px
