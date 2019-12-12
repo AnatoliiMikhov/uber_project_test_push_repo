@@ -198,10 +198,11 @@ nav {
   margin-bottom: 0;
 }
 
-.advantages .advantages_row {
+/* проверить и удалить */
+/* .advantages .advantages_row {
   margin-top: 40px;
 }
-
+ */
 .advantages .advantages_item {
   display: flex;
   justify-content: space-around;
