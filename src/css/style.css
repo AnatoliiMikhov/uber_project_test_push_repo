@@ -170,7 +170,7 @@ nav {
 
 .advantages {
   min-height: 900px;
-  padding: 71px 0 60px 0;
+  padding: 71px 0 65px 0;
 }
 
 .advantages .mini_heading,
@@ -198,15 +198,11 @@ nav {
   margin-bottom: 0;
 }
 
-/* проверить и удалить */
-/* .advantages .advantages_row {
-  margin-top: 40px;
-}
- */
 .advantages .advantages_item {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 35px;
 }
 
 .advantages .advantages_round {
