@@ -251,8 +251,43 @@ nav {
 }
 
 .mobile {
-  min-height: 864px;
-  background: url("") center center/cover no-repeat;
+  min-height: 900px;
+  background: url("../image/mobile/bg/mobile_bg.png") center center/cover no-repeat;
   padding: 48px 0 80px 0;
+}
+
+.mobile .row {
+  margin-top: 32px;
+}
+
+.mobile_item {
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+}
+
+.mobile_item_1 {
+  background: url("../image/mobile/img/mobile_screen_1.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_2 {
+  background: url("../image/mobile/img/mobile_screen_2.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_3 {
+  background: url("../image/mobile/img/mobile_screen_3.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_4 {
+  background: url("../image/mobile/img/mobile_screen_4.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_5 {
+  background: url("../image/mobile/img/mobile_screen_5.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_6 {
+  background: url("../image/mobile/img/mobile_screen_6.jpg") center center/cover no-repeat;
 }
 /*# sourceMappingURL=style.min.css.map */
