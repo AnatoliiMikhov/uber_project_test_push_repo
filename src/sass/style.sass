@@ -1,7 +1,12 @@
+// переменные для цвета
+$main_color: #1eacc7
+$second_color: #ff5656
+
 *
 	font-family: "Roboto", sans-serif
 
 .label
+	position: relative
 	width: 112px
 	height: 24px
 	background-color: #000000
@@ -12,8 +17,12 @@
 	text-transform: uppercase
 	padding: 6px 10px 6px 12px
 	text-align: center
-
+	z-index: 2
+	&_white
+		background-color: #fff
+		color: #000
 .title
+	position: relative
 	color: #222222
 	font-size: 38px
 	font-weight: 700
@@ -21,12 +30,19 @@
 	text-align: center
 	margin-top: 24px
 	margin-bottom: 0
+	z-index: 2
+	&_white
+		color: #fff
 
 .subtitle
+	position: relative
 	color: #222222
 	font-size: 17px
 	font-weight: 400
 	text-align: center
+	&_white
+		color: #fff
+		z-index: 2
 
 header
 	position: relative
@@ -36,8 +52,9 @@ nav
 	background-color: #212121
 	position: fixed
 	left: 0
-	right: 0
 	top: 0
+	width: 100%
+	z-index: 10
 
 .menu
 	display: flex
@@ -46,14 +63,14 @@ nav
 	margin: 0
 	list-style-type: none
 
-	.menu_item
+	&_item
 		border-right: 2px dotted black
 		padding-right: 28px
 
 		&:last-child
 			border: none
 
-	.menu_link
+	&_link
 		color: #ffffff
 		font-size: 15px
 		font-weight: 300
@@ -65,62 +82,55 @@ nav
 	background-color: rgba(0, 0, 0, 0.6)
 	margin-top: 50px
 
-	.subheader_logo
+	&_logo
 		display: block
 		max-width: 100%
 		margin-top: 16px
 
-	.subheader_official
+	&_official
 		opacity: 0.5
 		color: #ffffff
 		font-size: 13px
 		font-weight: 400
 		margin-top: 6px
 
-	.call_block
-		margin-left: 167px
-
-	.subheader_call
+	&_call
 		color: #ffffff
 		font-size: 12px
 		font-weight: 300
 		margin-top: 19px
 		text-align: right
 
-	a
-		&.subheader_phone
-			display: block
-			color: #ffffff
-			font-size: 22px
-			font-weight: 400
-			text-transform: uppercase
-			text-align: right
-			margin-top: 8px
-			line-height: 12px
+	&_phone
+		display: block
+		color: #ffffff
+		font-size: 22px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: right
+		margin-top: 8px
+		line-height: 12px
 
-	.subheader_btn
+	&_btn
 		width: 172px
 		height: 46px
 		margin-top: 19px
 		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
 		border: none
 		border-radius: 6px
-		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+		background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
 		color: #ffffff
 		font-size: 14px
 		font-weight: 400
 		text-transform: uppercase
 
-	.call_btn_block
-		margin-left: 10px
-
 .promo
 	min-height: 800px
 	background: url("/src/image/promo/promo_bg.png") center (center / cover) no-repeat
 	padding: 200px 0 135px 0
 
-	.promo_header
+	&_header
 		color: #ffffff
 		font-weight: 700
 		text-transform: uppercase
@@ -129,7 +139,7 @@ nav
 		text-align: center
 		margin: 0
 
-	.promo_subheader
+	&_subheader
 		color: #ffffff
 		font-size: 36px
 		font-weight: 700
@@ -139,7 +149,7 @@ nav
 		margin: 0
 		margin-top: 22px
 
-	.promo_descr
+	&_descr
 		color: #ffffff
 		font-size: 18px
 		font-weight: 400
@@ -147,7 +157,7 @@ nav
 		text-align: center
 		margin-top: 23px
 
-	.promo_btn
+	&_btn
 		display: block
 		width: 259px
 		height: 63px
@@ -155,7 +165,7 @@ nav
 		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
 		border: none
 		border-radius: 6px
-		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+		background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
 		color: #ffffff
 		font-size: 18px
@@ -166,30 +176,30 @@ nav
 	min-height: 900px
 	padding: 71px 0 65px 0
 
-	.advantages_item
+	&_item
 		display: flex
 		justify-content: space-around
 		align-items: center
 		margin-top: 35px
 
-	.advantages_round
+	&_round
 		display: flex
 		justify-content: center
 		align-items: center
 		width: 113px
 		height: 113px
-		background-color: #1eacc7
+		background-color: $main_color
 		border-radius: 50%
 
-	.advantages_descr
-		max-width: 341px
+	&_descr
+		width: 341px
 
 		&:last-child
 			align-self: flex-start
 
 		h3
 			line-height: 21px
-			color: #1eacc7
+			color: $main_color
 			font-size: 17px
 			font-weight: 400
 			margin-bottom: 0
@@ -255,6 +265,32 @@ nav
 			border-radius: 50%
 			cursor: pointer
 .choice
+	position: relative
 	min-height: 896px
-	background: url("../image/choice_1/choice_1_bg.png") center (center/cover) no-repeat
+	background: url("../image/mobile/bg/mobile_bg.png") center (center/cover) no-repeat
 	padding: 57px 0 138px 0
+
+	.img_block
+		position: relative
+		width: 62%
+		margin: 22px auto 0 auto
+	&_img
+		position: relative
+		display: block
+		width: 100%
+		z-index: 2
+	&_descr
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+	.black_bg
+		position: absolute
+		top: 0
+		left: 0
+		// right: 0
+		height: 50%
+		width: 100%
+		background-color: #070716
+		z-index: 1
