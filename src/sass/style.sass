@@ -272,6 +272,30 @@ nav
 			background-color: #000000
 			border-radius: 50%
 			cursor: pointer
+			&::before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main_color
+				transition: 0.3s
+			&::after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block
+				height: 14px
+				width: 2px
+				background-color: $main_color
+				transition: 0.3s
+			&:hover
+				width: 30px
+				height: 30px
+				background-color: $main_color
+				&::before, &::after
+					background-color: $second_color
+
 .choice
 	position: relative
 	min-height: 896px
