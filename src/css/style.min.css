@@ -419,7 +419,7 @@ nav {
 }
 
 .required {
-  padding: 35px 0 84px 0;
+  padding: 68px 0 42px 0;
 }
 
 .required_block {
@@ -440,6 +440,7 @@ nav {
 }
 
 .required_list li {
+  position: relative;
   color: #222222;
   font-size: 17px;
   font-weight: 300;
@@ -453,9 +454,27 @@ nav {
 
 .required_list li::before {
   content: '';
+  position: absolute;
+  top: 3px;
+  left: -32px;
   display: block;
   width: 21px;
   height: 20px;
+  border-radius: 50%;
   background: url("../image/required/check_blue.svg") center center/cover no-repeat;
+}
+
+.required_descr {
+  font-size: 17px;
+  color: #1ca8c3;
+  font-weight: 300;
+}
+
+.required .warning .required_title {
+  color: #ff5656;
+}
+
+.required .warning .required_list li::before {
+  background: url("../image/required/check_red.svg") center center/cover no-repeat;
 }
 /*# sourceMappingURL=style.min.css.map */
