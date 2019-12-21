@@ -557,7 +557,8 @@
 }
 
 .footer_links {
-  width: 21% !important;
+  width: 390px;
+  margin: 0 auto;
 }
 
 .footer_links_main {
