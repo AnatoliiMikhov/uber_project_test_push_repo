@@ -584,6 +584,10 @@
   color: #fff;
 }
 
+.footer_social_link span {
+  color: #ffffff;
+}
+
 .footer_links {
   width: 390px;
   margin: 0 auto;
