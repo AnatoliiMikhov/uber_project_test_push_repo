@@ -24,9 +24,11 @@ $second_color: #ff5656
 	padding: 6px 10px 6px 12px
 	text-align: center
 	z-index: 2
+
 	&_white
 		background-color: #fff
 		color: #000
+
 .title
 	position: relative
 	color: #222222
@@ -37,6 +39,7 @@ $second_color: #ff5656
 	margin-top: 24px
 	margin-bottom: 0
 	z-index: 2
+
 	&_white
 		color: #fff
 
@@ -46,12 +49,14 @@ $second_color: #ff5656
 	font-size: 17px
 	font-weight: 400
 	text-align: center
+
 	&_white
 		color: #fff
 		z-index: 2
 
 .header
 	position: relative
+
 	&_nav
 		height: 50px
 		background-color: #212121
@@ -60,6 +65,7 @@ $second_color: #ff5656
 		top: 0
 		width: 100%
 		z-index: 10
+
 		&_menu
 			display: flex
 			justify-content: space-between
@@ -128,6 +134,7 @@ $second_color: #ff5656
 		font-size: 14px
 		font-weight: 400
 		text-transform: uppercase
+
 		+btn_hover
 
 .promo
@@ -176,6 +183,7 @@ $second_color: #ff5656
 		font-size: 18px
 		font-weight: 400
 		text-transform: uppercase
+
 		+btn_hover
 
 .advantages
@@ -234,22 +242,23 @@ $second_color: #ff5656
 		padding-top: 92px
 
 		&_1
-			background: url("../image/mobile/img/mobile_screen_1.jpg") center (center/cover) no-repeat
+			background: url("../image/mobile/img/mobile_screen_1.jpg") center (center / cover) no-repeat
 
 		&_2
-			background: url("../image/mobile/img/mobile_screen_2.jpg") center (center/cover) no-repeat
+			background: url("../image/mobile/img/mobile_screen_2.jpg") center (center / cover) no-repeat
 
 		&_3
-			background: url("../image/mobile/img/mobile_screen_3.jpg") center (center/cover) no-repeat
+			background: url("../image/mobile/img/mobile_screen_3.jpg") center (center / cover) no-repeat
 
 		&_4
-			background: url("../image/mobile/img/mobile_screen_4.jpg") center (center/cover) no-repeat
+			background: url("../image/mobile/img/mobile_screen_4.jpg") center (center / cover) no-repeat
 
 		&_5
-			background: url("../image/mobile/img/mobile_screen_5.jpg") center (center/cover) no-repeat
+			background: url("../image/mobile/img/mobile_screen_5.jpg") center (center / cover) no-repeat
 
 		&_6
-			background: url("../image/mobile/img/mobile_screen_6.jpg") center (center/cover) no-repeat
+			background: url("../image/mobile/img/mobile_screen_6.jpg") center (center / cover) no-repeat
+
 		&_subtitle
 			color: #ffffff
 			font-size: 24px
@@ -257,6 +266,7 @@ $second_color: #ff5656
 			line-height: 31px
 			text-transform: uppercase
 			text-align: center
+
 		&_plus
 			position: absolute
 			bottom: 35px
@@ -270,15 +280,17 @@ $second_color: #ff5656
 			background-color: #000000
 			border-radius: 50%
 			cursor: pointer
+
 			&::before
-				content: ''
+				content: ""
 				display: block
 				width: 14px
 				height: 2px
 				background-color: $main_color
 				transition: 0.3s
+
 			&::after
-				content: ''
+				content: ""
 				position: absolute
 				left: 50%
 				transform: translateX(-50%)
@@ -287,56 +299,67 @@ $second_color: #ff5656
 				width: 2px
 				background-color: $main_color
 				transition: 0.3s
+
 			&:hover
 				width: 30px
 				height: 30px
 				background-color: $main_color
+
 				&::before, &::after
 					background-color: $second_color
 
 .choice
 	position: relative
 	min-height: 896px
-	background: url("../image/mobile/bg/mobile_bg.png") center (center/cover) no-repeat
+	background: url("../image/mobile/bg/mobile_bg.png") center (center / cover) no-repeat
 	padding: 57px 0 138px 0
 
 	.img_block
 		position: relative
 		width: 62%
 		margin: 22px auto 0 auto
+
 	&_img
 		position: relative
 		display: block
 		width: 100%
 		z-index: 2
+
 	&_descr
 		text-align: center
 		color: #222222
 		font-size: 17px
 		font-weight: 300
 		line-height: 24px
+
 	.black_bg
 		position: absolute
 		top: 0
 		left: 0
+
 		// right: 0
 		height: 50%
 		width: 100%
 		background-color: #070716
 		z-index: 1
+
 .required
 	padding: 68px 0 42px 0
+
 	&_block
 		margin: 33px 0
+
 	&_title
 		color: #1ca8c3
 		font-size: 22px
 		font-weight: 400
 		margin: 0
+
 	&_list
 		list-style-type: none
 		padding-left: 50px
 		margin-top: 22px
+
 		li
 			position: relative
 			color: #222222
@@ -344,10 +367,12 @@ $second_color: #ff5656
 			font-weight: 300
 			line-height: 24px
 			margin-bottom: 10px
+
 			&:last-child
 				margin-bottom: 0
+
 			&::before
-				content: ''
+				content: ""
 				position: absolute
 				top: 3px
 				left: -32px
@@ -355,23 +380,28 @@ $second_color: #ff5656
 				width: 21px
 				height: 20px
 				border-radius: 50%
-				background: url("../image/required/check_blue.svg") center (center/cover) no-repeat
+				background: url("../image/required/check_blue.svg") center (center / cover) no-repeat
+
 	&_descr
 		font-size: 17px
 		color: #1ca8c3
 		font-weight: 300
+
 	.warning
 		.required_title
 			color: $second_color
+
 		.required_list
 			li
 				&::before
-					background: url('../image/required/check_red.svg') center (center/cover) no-repeat
+					background: url("../image/required/check_red.svg") center (center / cover) no-repeat
+
 .sities
 	position: relative
 	min-height: 717px
 	padding: 49px 0
-	background: url('../image/sities/sities_bg.png') center (center/cover) no-repeat
+	background: url("../image/sities/sities_bg.png") center (center / cover) no-repeat
+
 	&_link
 		position: absolute
 		left: 50%
@@ -381,40 +411,50 @@ $second_color: #ff5656
 		font-size: 15px
 		font-weight: 400
 		text-transform: uppercase
+
 		&:hover
 			text-decoration: none
 			color: #fff
 
 .footer
-	min-height: 200px // удалить TODO :)
+	min-height: 200px
 	padding: 0 23px
 	box-shadow: inset 0 -8px 0 #000000
+
 	a
 		&:hover
 			text-decoration: none
+
 	&_delimetr
 		width: 299px
 		height: 4px
 		background-color: #1fbad6
 		margin: 0 auto
 		margin-top: 14px
+
 	&_wrapper
 		display: flex
 		justify-content: space-between
 		padding-top: 32px
+
 	&_wrapper > div
 		width: 33%
+
 		&:last-child
 			display: flex
 			justify-content: flex-end
+
 			a
 				margin-left: 9px
+
 				&:first-child
 					margin-left: 0
+
 	&_social
 		display: flex
 		justify-content: space-between
 		width: 160px
+
 	&_social_link
 		margin-right: 9px
 		display: flex
@@ -425,31 +465,39 @@ $second_color: #ff5656
 		height: 32px
 		background-color: #070716
 		border-radius: 100%
+
 		i
 			color: #fff
+
 		span
 			color: #ffffff
+
 	&_links
 		width: 390px
 		margin: 0 auto
+
 		&_main
 			display: flex
 			justify-content: space-between
 			padding: 0 10px
+
 			a
 				color: #070716
 				font-size: 15px
 				font-weight: 300
 				text-transform: uppercase
+
 		&_sub
 			display: flex
 			justify-content: space-between
 			margin-top: 10px
+
 			a
 				color: #999999
 				font-size: 11px
 				font-weight: 300
 				text-transform: uppercase
+
 		&_lang
 			display: block
 			margin: 0 auto
