@@ -347,7 +347,7 @@
 }
 
 .mobile_item_plus::before {
-  content: '';
+  content: "";
   display: block;
   width: 14px;
   height: 2px;
@@ -357,7 +357,7 @@
 }
 
 .mobile_item_plus::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -453,7 +453,7 @@
 }
 
 .required_list li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 3px;
   left: -32px;
