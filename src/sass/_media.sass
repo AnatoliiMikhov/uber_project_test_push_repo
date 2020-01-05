@@ -42,6 +42,26 @@
 		.img_block
 			margin-top: 75px
 
+	.footer
+		padding: 0 5px
+
+		&_wrapper > div
+			width: 35%
+
+			&:first-child
+				width: 30%
+
+			&:last-child
+				a
+					margin-left: 0
+
+		&_links
+			width: 350px
+
+		&_mobile
+			img
+				width: 90px
+
 @media (max-width: 991px)
 
 	.title
@@ -111,6 +131,41 @@
 
 		.title
 			margin-top: 16px
+
+	.footer
+		min-height: 246px
+
+		&_divider
+			margin-top: 25px
+
+		&_wrapper
+			flex-direction: column
+
+		&_wrapper > div
+			width: 100%
+
+			&:first-child
+				width: 100%
+				margin: 0 auto
+
+			&:last-child
+				width: 100%
+				justify-content: center
+				margin-top: 20px
+
+				a
+					margin-left: 6px
+
+			&:nth-child(2)
+				order: -1
+
+		&_social
+			width: 100%
+			justify-content: center
+			margin-top: 20px
+
+			&_link
+				margin: 0 10px
 
 @media (max-width: 767px)
 	.header
@@ -381,6 +436,9 @@
 				font-size: 14px
 				margin-bottom: 4px
 
+		.span_adapt
+			font-size: 17px
+
 	.sities
 		padding: 25px 0
 
@@ -390,6 +448,35 @@
 		&_link
 			bottom: 30px
 			white-space: nowrap
+
+	.footer
+		padding: 0
+		box-shadow: none
+
+		&_wrapper
+			padding-top: 22px
+
+			> div:last-child
+				a
+					margin-left: 0
+
+		&_links
+			width: 320px
+
+			&_main
+				padding: 0 21px 0 18px
+				width: 320px
+				justify-content: space-around
+				a
+					font-size: 14px
+
+			&_sub
+				padding: 0 38px
+				flex-wrap: wrap
+
+		&_social
+			&_link
+				margin: 0 5px
 
 @media (max-width: 374px)
 
