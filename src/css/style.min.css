@@ -747,6 +747,13 @@
   .required {
     padding-top: 48px;
   }
+  .sities {
+    min-height: 360px;
+    padding: 32px 0;
+  }
+  .sities .title {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1022,6 +1029,16 @@
   .required_list li {
     font-size: 14px;
     margin-bottom: 4px;
+  }
+  .sities {
+    padding: 25px 0;
+  }
+  .sities .subtitle {
+    font-size: 14px;
+  }
+  .sities_link {
+    bottom: 30px;
+    white-space: nowrap;
   }
 }
 
