@@ -640,6 +640,13 @@
   text-align: center;
 }
 
+.footer_mobile img {
+  width: 82px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
 .xs_visible {
   display: none;
 }
@@ -697,9 +704,6 @@
   }
   .footer_links {
     width: 350px;
-  }
-  .footer_mobile img {
-    width: 90px;
   }
 }
 
