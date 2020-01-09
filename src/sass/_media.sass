@@ -317,14 +317,22 @@
 
 			&_menu
 				width: 70%
+				&_item:first-child
+					border-top: 2px solid #535353
 
 				&_item
 					width: 100%
 					text-align: center
+					margin: 0
+					border-bottom: 2px solid #535353
+					&:last-child
+						border-bottom: 2px solid #535353
+
 				&_link
+					display: block
 					font-size: 14px
 					width: 100%
-					padding: 20px 0
+					padding: 15px 0
 
 	.subheader
 		height: 60px
@@ -346,6 +354,11 @@
 			margin-top: 7px
 			border-radius: 4px
 			font-size: 10px
+			&:hover
+				background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
+				outline: none
+			&:active
+				background-image: linear-gradient(to top, $main_color 0%, #178fa7 100%)
 
 	.promo
 		min-height: 400px
@@ -370,6 +383,11 @@
 			font-size: 16px
 			margin: 0 auto
 			margin-top: 72px
+			&:hover
+				background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
+				outline: none
+			&:active
+				background-image: linear-gradient(to top, $main_color 0%, #178fa7 100%)
 
 	.advantages
 
