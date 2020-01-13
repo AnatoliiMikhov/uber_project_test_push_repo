@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ups7write/uber_project_test_push_repo/issues"
   },
-  "homepage": "https://github.com/ups7write/uber_project_test_push_repo#readme"
+  "homepage": "https://github.com/ups7write/uber_project_test_push_repo#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
