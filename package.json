@@ -1,0 +1,22 @@
+{
+  "name": "uber_public",
+  "version": "1.0.0",
+  "description": "webdeveloper course site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ups7write/uber_project_test_push_repo.git"
+  },
+  "author": "ups7write",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ups7write/uber_project_test_push_repo/issues"
+  },
+  "homepage": "https://github.com/ups7write/uber_project_test_push_repo#readme",
+  "keywords": [
+    "Ganesha*27"
+  ]
+}
