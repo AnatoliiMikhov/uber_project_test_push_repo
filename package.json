@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/ups7write/uber_project_test_push_repo#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0"
   }
 }
